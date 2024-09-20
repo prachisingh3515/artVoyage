@@ -1,0 +1,155 @@
+
+body{
+  margin: 0;
+  background-image: linear-gradient(rgba(17, 1, 1, 0.59), rgba(0, 0, 0, 0.655)),url(https://tse3.mm.bing.net/th?id=OIP.jd9fARywusBhFd7ekUo27gHaDh&pid=Api&P=0&h=220);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  padding-right: 80px;
+  background-color: black;
+  color: white;
+  border-bottom: solid white 3px;
+}
+
+.nav-links a {
+  color: white;
+}
+
+/* LOGO */
+.logo {
+  padding-left: 30px;
+  font-size: 32px;
+}
+
+.logo {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+ul:hover li a {
+  opacity: 0.8;
+  filter: blur(2px);
+}
+
+ul li a:hover {
+  opacity: 1;
+  filter: blur(0);
+  text-decoration: none;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+
+
+.intro {
+  background-image: linear-gradient(rgba(21, 31, 38, 0.552), rgba(32, 76, 96, 0.342)), url(https://images.pexels.com/photos/159862/art-school-of-athens-raphael-italian-painter-fresco-159862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  height: 85vh;
+  width: 100vw;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-position: center center;
+}
+.intro h1{
+  margin-top: 20%;
+  font-size: 60px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.container1{
+  padding-top: 50px;
+  display: flex;
+  gap: 60px;
+}
+.heading{
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding-left: 50px;
+}
+.para1{
+  color: white;
+  height: 380px;
+  width: 1000px;
+  font-size: 20px;
+}
+.para-p1{
+  padding: 50px;
+  padding-top: 20px;
+}
+
+.img1 img{
+  margin-left: 70px;
+  height: 350px;
+  width: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.container1:hover .img1 img {
+  transform: translateY(-25px); 
+}
+.container2{
+  display:flex;
+  gap: 60px;
+  flex-direction: row-reverse;
+}
+.para2{
+  color: white;
+  height: 380px;
+  width: 1000px;
+  font-size: 20px;
+}
+.para-p2{
+  padding: 50px;
+  padding-top: 20px;
+}
+.img2 img{
+  margin-right: 70px;
+  height: 350px;
+  width: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.container2:hover .img2 img {
+  transform: translateY(-25px); 
+}

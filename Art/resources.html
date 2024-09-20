@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resources.css">
+    <script src="resources.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo"><img src="https://tse3.mm.bing.net/th?id=OIP.979W6xRv5YwYZ3KBEZr7zgHaEK&pid=Api&P=0&h=220"
+            height="100px">
+          <div class="overlay-text">
+            <h2>artVoyage</h2>
+          </div>
+        </div>
+    
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+    
+            <li><a href="index.html">Home</a></li>
+            <li><a href="essential.html">Essentials</a></li>
+            <li><a href="forms.html">Forms</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+    
+          </div>
+        </ul>
+    </nav>
+    
+    <div class="intro"> 
+      <h1> RESOURCES</h1> 
+      <h2 class="reveal"> Videos, Stationary, Apps</h2>
+      
+  </div>
+  <div class="article">
+      <div class="videos ">
+        <p id="yewali" class="reveal"><b>"Step into a realm where creativity knows no bounds, where imagination dances freely, and where every frame is a portal to inspiration. Explore our world of art in motion."</b></p>
+        <div class="container reveal">
+            <div class="search-container">
+                <div id="search-videos">
+                    <div class="upar">
+                        <h3> Search for any topic: </h3>
+                        <div class="search">
+                            <input type="text" id="keyword" placeholder="For eg. Depression" class="enter">
+                            <button onclick="searchVideos()" class="button"> Search </button>
+                        </div>
+                    </div>
+                    <div id="results"></div>
+                </div>
+            </div>
+            <div id="player-container">
+                <div class="para">
+                    <p> Your videos will be displayed here.</p>
+                    <p> Note some videos might not load due to privacy or network issues. </p>
+
+                </div>
+                <div id="player"></div>
+            </div>
+        </div>
+            
+      </div>
+      <div class="stationary">
+        <p>Craft your digital masterpieces with our online art stationery.</p>
+        <div class="items">
+            <div class="item">
+                <img src="https://m.media-amazon.com/images/I/81GshYwaPOL._SL1500_.jpg" alt="item1" >
+                <a href="https://www.amazon.in/ABOUT-SPACE-Dual-Tip-Markers/dp/B0BB7Z4HPR/ref=sr_1_2_sspa?sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"><button>Shop now at Amazon</button></a>
+            </div>
+            <div class="item">
+                <img src="https://m.media-amazon.com/images/I/61Sp7Jk9jgL._SL1080_.jpg" alt="item1" >
+                <a href="https://www.amazon.in/Synthiglow-Professional-sketching-Charcoal-Graphite/dp/B0CTHJ26JV/ref=sr_1_4_sspa?sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"><button>Shop now at Amazon</button></a>
+            </div>
+            <div class="item">
+                <img src="https://m.media-amazon.com/images/I/51sNbRTiZJL.jpg" alt="item1">
+                <a href="https://www.amazon.in/OFIXO-Sheets-Colored-Origami-Folding/dp/B07SCZB24S/ref=sr_1_15?sr=8-15"><button>Shop now at Amazon</button></a>
+            </div>
+            <div class="item">
+                <img src="https://m.media-amazon.com/images/I/71mo0WtHsDL._SL1200_.jpg" alt="item1">
+                <a href="https://www.amazon.in/Stic-Fineliner-Calligraphy-Highlighting-Multicolor/dp/B0C1GCR6BZ/ref=sr_1_18?sr=8-18"><button>Shop now at Amazon</button></a>
+            </div>
+            <div class="item">
+                <img src="https://m.media-amazon.com/images/I/71BYyYaURXL._SL1500_.jpg" alt="item1">
+                <a href="https://www.amazon.in/Prithwe-Eco-Friendly-Recycled-Newspaper-Pencils/dp/B0BHTTCL8M/ref=sr_1_22_sspa?sr=8-22-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1"><button>Shop now at Amazon</button></a>
+            </div>
+            <div class="item">
+                <img src="https://m.media-amazon.com/images/I/613c+o2mkpL._SL1482_.jpg" alt="item1">
+                <a href="https://www.amazon.in/SHUTTLE-ART-Aesthetic-Highlighter-Water-based/dp/B0CR3TY8F1/ref=sr_1_6?dib=eyJ2IjoiMSJ9.f8Ei-HhE1lFOqTUxHbpEHEgz_E5rzI8tUaOijmAT2-tPLg8SCl8FQ-CsCNOJQmBDmPL0dN5G8ZKggRj1g0xquWLstiKBBVt8fSwWVn2QvKFxwNYMsz_0oZhhfm8Z_3HStAn5sU-StWKj_iahthnrcNk71tD6I2DmEFTwSjtCwj1qhPex33P8GdpCX3oMOc9tvFT6DXzQCZmtammFMrJfOODRamCmafjVRdPValo-1ddfNVOKUGCa3FSRoZZqFkkiTWn_O1-T7XG1Mjw1c3ey4QosVphifbGG8AqLTG6cF7s.lalM3m_AZomzHn51AOoWvD88Y18fW_G6XemJv7kPZ6Y&dib_tag=se&keywords=art+stationery+items&qid=1716784653&sr=8-6"><button>Shop now at Amazon</button></a>
+            </div>
+            <div class="item">
+                <img src="https://m.media-amazon.com/images/I/41oLhpKArFL.jpg" alt="item1">
+                <a href="https://www.amazon.in/COI-Sticky-Notes-Holder-Gifting/dp/B00UGZWM2I/ref=sr_1_13?dib=eyJ2IjoiMSJ9.f8Ei-HhE1lFOqTUxHbpEHEgz_E5rzI8tUaOijmAT2-tPLg8SCl8FQ-CsCNOJQmBDmPL0dN5G8ZKggRj1g0xquWLstiKBBVt8fSwWVn2QvKFxwNYMsz_0oZhhfm8Z_3HStAn5sU-StWKj_iahthnrcNk71tD6I2DmEFTwSjtCwj1qhPex33P8GdpCX3oMOc9tvFT6DXzQCZmtammFMrJfOODRamCmafjVRdPValo-1ddfNVOKUGCa3FSRoZZqFkkiTWn_O1-T7XG1Mjw1c3ey4QosVphifbGG8AqLTG6cF7s.lalM3m_AZomzHn51AOoWvD88Y18fW_G6XemJv7kPZ6Y&dib_tag=se&keywords=art+stationery+items&qid=1716784653&sr=8-13"><button>Shop now at Amazon</button></a>
+            </div>
+            <div class="item">
+                <img src="https://m.media-amazon.com/images/I/91h7PHGnsaL._SL1500_.jpg" alt="item1">
+                <a href="https://www.amazon.in/INDIKONB-Craft-Crafts-Supplies-Materials/dp/B09SQ24JYL/ref=sr_1_18?dib=eyJ2IjoiMSJ9.f8Ei-HhE1lFOqTUxHbpEHEgz_E5rzI8tUaOijmAT2-tPLg8SCl8FQ-CsCNOJQmBDmPL0dN5G8ZKggRj1g0xquWLstiKBBVt8fSwWVn2QvKFxwNYMsz_0oZhhfm8Z_3HStAn5sU-StWKj_iahthnrcNk71tD6I2DmEFTwSjtCwj1qhPex33P8GdpCX3oMOc9tvFT6DXzQCZmtammFMrJfOODRamCmafjVRdPValo-1ddfNVOKUGCa3FSRoZZqFkkiTWn_O1-T7XG1Mjw1c3ey4QosVphifbGG8AqLTG6cF7s.lalM3m_AZomzHn51AOoWvD88Y18fW_G6XemJv7kPZ6Y&dib_tag=se&keywords=art+stationery+items&qid=1716784653&sr=8-18"><button>Shop now at Amazon</button></a>
+            </div>
+            <div class="item">
+                <img src="https://m.media-amazon.com/images/I/41gYP7UxhqL._SL1001_.jpg" alt="item1">
+                <a href="https://www.amazon.in/Stackable-Organizer-Large-Capacity-Stationery-White-1Pcs/dp/B0C8YHM2HP/ref=sr_1_55?dib=eyJ2IjoiMSJ9.f8Ei-HhE1lFOqTUxHbpEHEgz_E5rzI8tUaOijmAT2-tPLg8SCl8FQ-CsCNOJQmBDmPL0dN5G8ZKggRj1g0xquWLstiKBBVt8fSwWVn2QvKFxwNYMsz_0oZhhfm8Z_3HStAn5sU-StWKj_iahthnrcNk71tD6I2DmEFTwSjtCwj1qhPex33P8GdpCX3oMOc9tvFT6DXzQCZmtammFMrJfOODRamCmafjVRdPValo-1ddfNVOKUGCa3FSRoZZqFkkiTWn_O1-T7XG1Mjw1c3ey4QosVphifbGG8AqLTG6cF7s.lalM3m_AZomzHn51AOoWvD88Y18fW_G6XemJv7kPZ6Y&dib_tag=se&keywords=art+stationery+items&qid=1716784653&sr=8-55"><button>Shop now at Amazon</button></a>
+            </div>
+            <div class="item">
+                <img src="https://m.media-amazon.com/images/I/71vG96oapXL._SL1200_.jpg" alt="item1">
+                <a href="https://www.amazon.in/Wolpin-Adhesive-Reminders-Organizing-Meetings/dp/B0CJH1C35G/ref=sr_1_49?dib=eyJ2IjoiMSJ9.geDbEFYmbVGD87fj98yGBzlMxXu1nNMKkb6WO2aCaHHAkUn2TxAzReKTAMmOsO_L56PR7bneBWwfAcrwZBs1eWNileOXQzUicRREJUNxnSSNJqi5SvjAeYr4cAy8TXuGFC2Unl5Z4sAazZZM7GmEcEMDrbG33NgGmuvGLrwt2Atr_SeZuEdyH1dNNMKCbE0gOGMxSDbZmussv65DyCu9zlnCPIetU0Jx1NXhT5ZOGdMli0S7rjxVu6UBi4w7X6xj3jlyT7AnfyyYqt-axwstL4-rXaMQAp6mLTmMXSjK894.NYrg84ui1JOBRknFqaFp6w-PtnsBYRlDzBKQrs504Fk&dib_tag=se&keywords=art+stationery+items&qid=1716785542&sr=8-49"><button>Shop now at Amazon</button></a>
+            </div>
+        </div>
+        <a href="https://www.amazon.in/s?k=art+stationery+items&ref=nb_sb_ss_ts-doa-p_2_10"><button>Explore More</button></a>
+      </div>
+      <div class="app ">
+        <p id="yewali" class="reveal"> Explore our handpicked selection designed to elevate your skills and inspire your imagination, all aligned with your chosen topics of interest.</p>
+        <div class="container reveal">
+            <div class="options">
+                <h2 style="color: rgb(0, 0, 0);">Select your Domain of interest</h2>
+                <ul>
+                    <li onclick="displayInfo('Art Reference')">Art Reference </li>
+                    <li onclick="displayInfo('Calligraphy and Handwriting')">Calligraphy and Handwriting</li>
+                    <li onclick="displayInfo('Animation and Comics')">Animation and Comics</li>
+                    <li onclick="displayInfo('Sketching')">Sketching</li>
+                    <li onclick="displayInfo('Pixel Art')">Pixel Art</li>
+                    <li onclick="displayInfo('Painting')">Painting</li>
+                    <li onclick="displayInfo('Doodling')">Doodling</li>
+                    <li onclick="displayInfo('3D Modeling')">3D Modeling</li>
+                    <li onclick="displayInfo('Tutorials')">Art Learning and Tutorials</li>
+                    <li onclick="displayInfo('Community')">Art Community/Social Networks</li>
+                </ul>
+            </div>
+            <div class="info">
+                <h2> Specialized app for you</h2>
+                <div id="selectedTopic"></div>
+                <div id="infoContent">
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+      
+</body>
+</html>

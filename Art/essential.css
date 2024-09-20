@@ -1,0 +1,420 @@
+body{
+    margin: 0;
+
+}
+a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  /* NAVBAR STYLING STARTS */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    padding-right: 80px;
+    background-color: black;
+    color: white;
+    border-bottom: solid white 3px;
+  }
+  
+  .nav-links a {
+    color: white;
+  }
+  
+  /* LOGO */
+  .logo {
+    padding-left: 30px;
+    font-size: 32px;
+  }
+  
+  .logo {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  }
+  
+  
+  /* NAVBAR MENU */
+  .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+  }
+  
+  ul:hover li a {
+    opacity: 0.8;
+    filter: blur(2px);
+  }
+  
+  ul li a:hover {
+    opacity: 1;
+    filter: blur(0);
+    text-decoration: none;
+  }
+  
+  .menu li {
+    padding: 5px 14px;
+  }
+  
+.intro {
+    background-image: linear-gradient(rgba(17, 1, 1, 0.638), rgba(0, 0, 0, 0.733)), url(https://bbartcenter.org/wp-content/uploads/2018/01/brushes-paints.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-position: center center;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    margin-top: -10px;
+}
+
+.intro h2 {
+    margin-top: -10px;
+}
+
+.color {
+
+    background-image: linear-gradient(rgba(17, 1, 1, 0.51), rgba(0, 0, 0, 0.631)), url(https://wallpaperset.com/w/full/7/9/e/442866.jpg);
+    background-size: cover;
+    height: 120vh;
+    width: 100vw;
+    background-attachment: fixed;
+    display: flex;
+    color: white;
+    background-position: center center;
+}
+
+.image {
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 20%;
+    height: 600px;
+    width: 650px;
+    background-color: white;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+.image img {
+    height: 400px;
+    width: 400px;
+    padding-top: 95px;
+    padding-left: 120px;
+    animation: rotateAnimation 6s linear infinite;
+}
+
+.color h2 {
+    font-size: 70px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-left: 140px;
+    padding-top: 250px;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(340deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.properties {
+    background-image: linear-gradient(rgba(17, 1, 1, 0.59), rgba(0, 0, 0, 0.655)), url(https://getwallpapers.com/wallpaper/full/1/6/6/646773.jpg);
+    background-size: cover;
+    height: 110vh;
+    width: 100vw;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-position: center center;
+}
+
+.properties h1 {
+    margin-top: 2%;
+    margin-left: 3%;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hue {
+    background-color: rgba(0, 0, 0, 0.552);
+    margin-left: 40px;
+    padding: 20px;
+    padding-top: 5px;
+    height: 100px;
+    width: 88%;
+    font-size: 25px;
+    border-radius: 10px;
+    transition: background-color 0.9s ease;
+}
+
+.hue:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.sat {
+    background-color: rgba(0, 0, 0, 0.552);
+    margin-top: 2%;
+    margin-left: 40px;
+    padding: 20px;
+    padding-top: 5px;
+    height: 150px;
+    width: 88%;
+    font-size: 25px;
+    border-radius: 10px;
+    transition: background-color 0.9s ease;
+}
+
+.sat:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.value {
+    background-color: rgba(0, 0, 0, 0.552);
+    margin-top: 2%;
+    margin-left: 40px;
+    padding: 20px;
+    padding-top: 5px;
+    height: 150px;
+    width: 88%;
+    font-size: 25px;
+    border-radius: 10px;
+    transition: background-color 0.9s ease;
+}
+
+.value:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.wheel {
+    background-image: linear-gradient(rgba(17, 1, 1, 0.59), rgba(0, 0, 0, 0.655)), url(https://tse4.mm.bing.net/th?id=OIP.-ffpUmmU3TlpIaiRsl7gWgHaFN&pid=Api&P=0&h=220);
+    background-size: cover;
+    height: 150vh;
+    width: 100vw;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-position: center center;
+
+}
+
+.pst {
+    display: flex;
+}
+
+.wheel h1 {
+    padding-top: 3%;
+    padding-left: 42%;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.prim {
+    background-color: rgba(0, 0, 0, 0.552);
+    margin-top: 2%;
+    margin-left: 35px;
+    padding: 20px;
+    padding-top: 5px;
+    font-size: 25px;
+    border-radius: 10px;
+    transition: background-color 0.9s ease;
+    height: 660px;
+    width: 55%;
+}
+
+.sec {
+    background-color: rgba(0, 0, 0, 0.552);
+    margin-top: 2%;
+    margin-left: 40px;
+    padding: 20px;
+    padding-top: 5px;
+    font-size: 25px;
+    border-radius: 10px;
+    transition: background-color 0.9s ease;
+    height: 660px;
+    width: 55%;
+}
+
+.tert {
+    background-color: rgba(0, 0, 0, 0.552);
+    margin-top: 2%;
+    margin-left: 40px;
+    margin-right: 45px;
+    padding: 20px;
+    padding-top: 5px;
+    font-size: 25px;
+    border-radius: 10px;
+    transition: background-color 0.9s ease;
+    height: 660px;
+    width: 55%;
+}
+
+.temp {
+    background-image:linear-gradient(rgba(17, 1, 1, 0.638), rgba(0, 0, 0, 0.733)), url(https://www.psdgraphics.com/file/warm-soft-colors-design.jpg);
+    background-size: cover;
+    height: 120vh;
+    width: 100vw;
+    background-attachment: fixed;
+    display: flex;
+    color: white;
+    background-position: center center;
+    
+}
+.image_temp {
+    border-radius: 20%;
+    height: 600px;
+    width: 650px;
+    background-color: white;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+.image_temp img {
+    height: 400px;
+    width: 400px;
+    padding-top: 95px;
+    padding-left: 120px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.temp h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-left: 80px;
+    padding-top: 150px;
+}
+.temp p{
+    font-size: 20px;
+    padding-left: 80px;
+    padding-top: 40px;
+}
+.sheet {
+    background-image:linear-gradient(rgba(17, 1, 1, 0.638), rgba(0, 0, 0, 0.733)), url(https://www.jacksonsart.com/blog/wp-content/uploads/2021/01/Jacksons_sizes-768x512.jpg);
+    background-size: cover;
+    height: 160vh;
+    width: 100vw;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-position: center center;
+}
+
+.sheet h1{
+    padding-top: 3%;
+    padding-left: 44%;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.sheet p{
+    padding: 40px;
+    font-size: 20px;
+}
+.pencil{
+    background-image: linear-gradient(rgba(17, 1, 1, 0.59), rgba(0, 0, 0, 0.655)), url(https://i.ytimg.com/vi/EUF4wHM5biw/maxresdefault.jpg);
+    background-size: cover;
+    height: 110vh;
+    width: 100vw;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-position: center center;
+}
+.pencil h1{
+    text-align: center;
+    margin-top: 15%;
+    
+    font-size: 70px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.pencil-shade{
+    background-image: linear-gradient(rgba(17, 1, 1, 0.819), rgba(0, 0, 0, 0.88));
+    background-size: cover;
+    height: 330vh;
+    width: 100vw;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-position: center center;
+}
+.pencil1{
+    display: flex;
+}
+.pencil-shade{
+    padding-top: 2%;
+}
+.pencil-shade p{
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 40px;
+    padding-top: 150px;
+    color: white;
+}
+.pencil-shade h1{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 8%;
+}
+.pencil-shade img{
+    margin-left: 10%;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+}
+.brush{
+    background-image: linear-gradient(rgba(17, 1, 1, 0.674), rgba(0, 0, 0, 0.731)), url(https://wallpaperaccess.com/full/1816874.jpg);
+    background-size: cover;
+    height: 120vh;
+    width: 100vw;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-position: center center;
+}
+.brush h1{
+    padding-top: 3%;
+    padding-left: 37%;
+    font-size: 70px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.brush p{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 30px;
+   
+}
